@@ -32,4 +32,5 @@ earlier adventurers. The only exit is to the south."""),
     room_map['narrow'].connections["n"] = room_map['treasure']
     room_map['treasure'].connections["s"] = room_map['narrow']
 
+#TODO add random items to room map
     return room_map
