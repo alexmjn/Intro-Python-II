@@ -49,6 +49,7 @@ while user_is_playing:
         if player.room.connections is not None:
             player.move(user_input)
             print("you have moved to " + player.room.name)
+            print("The items here are" + player.room.items)
         else:
             print("There's no room there!")
     elif user_input.lower() == 'q':

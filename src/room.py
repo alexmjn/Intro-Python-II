@@ -3,7 +3,7 @@
 
 class Room():
     def __init__(self, name, description, n_to=None,
-    e_to=None, s_to=None, w_to=None):
+    e_to=None, s_to=None, w_to=None, items=[]):
         self.name = name
         self.description = description
         self.connections = {
@@ -12,3 +12,4 @@ class Room():
             "s":    s_to,
             "w":    w_to
         }
+        self.items = items
